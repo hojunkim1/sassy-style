@@ -1,0 +1,28 @@
+.father {
+  display: flex;
+  /* Main Axis */
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background: peru;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+.child:nth-child(1) {
+  order: 2;
+  align-self: flex-end;
+}
+
+.child:nth-child(2) {
+  order: 1;
+  align-self: center;
+}
+
+.child:nth-child(3) {
+  order: 0;
+}
