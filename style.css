@@ -1,18 +1,23 @@
 .father {
   display: flex;
-  flex-wrap: wrap-reverse;
-  align-content: space-around;
-  justify-content: space-around;
   height: 100vh;
 }
 
 .child {
-  width: 100px;
+  /* Layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  /* Design */
   height: 100px;
   background: peru;
   color: aliceblue;
   font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.child:nth-child(2) {
+  flex-shrink: 3;
+  flex-grow: 3;
+  background-color: black;
 }
