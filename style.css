@@ -5,26 +5,23 @@ body {
 
 .father {
   /* Layout */
-  display: flex;
-  justify-content: space-around;
-  /* Design */
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 80px 100px 120px;
+  grid-template-rows: 80px 120px;
+  gap: 10px;
 }
 
 .child {
+  /* Design */
+  background: peru;
+  color: white;
+  font-size: 50px;
   /* Layout */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 30%;
-  flex-grow: 1;
-  /* Design */
-  height: 30%;
-  background: peru;
-  color: aliceblue;
-  font-size: 50px;
 }
 
-.child:nth-child(2) {
-  background-color: black;
+.child:nth-child(2n) {
+  background: black;
 }
