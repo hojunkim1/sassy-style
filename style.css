@@ -6,39 +6,39 @@ body {
 .grid {
   /* Layout */
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(4, 150px);
-  grid-template-areas:
-    "header header header header"
-    "content content content nav"
-    "content content content nav"
-    "footer footer footer footer";
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
 }
 
 .header {
-  /* Default */
-  grid-area: header;
+  /* Shortcuts #1 : slash */
+  grid-column: 1/-1;
   /* Design */
   background-color: fuchsia;
 }
 
 .content {
-  /* Default */
-  grid-area: content;
+  /* Shortcuts #2 : span */
+  grid-column: span 3;
+  grid-row: span 2;
   /* Design */
   background-color: chocolate;
 }
 
 .nav {
-  /* Default */
-  grid-area: nav;
+  /* Sucks Default */
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
   /* Design */
   background-color: crimson;
 }
 
 .footer {
-  /* Default */
-  grid-area: footer;
+  /* Use Case by Case! */
+  grid-column: span 4;
   /* Design */
   background-color: cyan;
 }
