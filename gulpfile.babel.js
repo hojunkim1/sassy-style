@@ -1,9 +1,9 @@
 import del from "del";
-import dartSass from "sass";
-import gulpSass from "gulp-sass";
+import { dest, parallel, series, src, watch } from "gulp";
 import autoprefixer from "gulp-autoprefixer";
 import csso from "gulp-csso";
-import { dest, parallel, series, src, watch } from "gulp";
+import gulpSass from "gulp-sass";
+import dartSass from "sass";
 
 const sass = gulpSass(dartSass);
 

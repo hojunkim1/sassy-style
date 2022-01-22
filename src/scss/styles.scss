@@ -1,6 +1,18 @@
-body {
-  background: peru;
-  a {
-    color: blue;
+@import "_variables";
+
+.box {
+  margin-top: 100px;
+
+  h1 {
+    color: peru;
+    font-size: $title;
+  }
+
+  button {
+    color: peru;
+  }
+
+  &:hover {
+    background-color: green;
   }
 }
