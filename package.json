@@ -1,0 +1,24 @@
+{
+  "name": "scss-masterclass",
+  "version": "1.0.0",
+  "description": "learn scss",
+  "main": "index.js",
+  "repository": "https://github.com/hojunkim1/scss-masterclass.git",
+  "author": "Hojun Kim <76956067+hojunkim1@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.16.9",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.0"
+  }
+}
