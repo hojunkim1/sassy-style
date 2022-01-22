@@ -1,0 +1,24 @@
+$minIphone: 500px;
+$maxIphone: 690px;
+$minIpad: $minIphone + 1;
+$maxIpad: 1120px;
+
+@mixin responsive($device) {
+  @if $device == "iphone" {
+    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) {
+      @content;
+    }
+  } @else if $device == "ipad" {
+    @media screen and (min-width: $minIpad) and (max-width: $maxIpad) {
+      @content;
+    }
+  } @else if $device == "iphone-l" {
+    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $device == "ipad-l" {
+    @media screen and (min-width: $minIpad) and (max-width: $maxIpad) and (orientation: landscape) {
+      @content;
+    }
+  }
+}
